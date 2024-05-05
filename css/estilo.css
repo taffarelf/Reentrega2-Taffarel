@@ -430,6 +430,10 @@ h5 {
         grid-template-columns: 1fr;
     }
 
+    .video{
+        width: 370px;
+    }
+
     .boton {
         display: block;
         background-color: #7A8450;
@@ -503,7 +507,7 @@ h5 {
     .navbar-toggler {
     margin-top: 22px;
     }
-    
+
     .carousel-item {
     align-items: center;
     width: 100%;
