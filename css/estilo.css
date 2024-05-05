@@ -447,9 +447,12 @@ h5 {
         top: 0;
         right: 0;
     }
+    .nav-logo{
+        display: none;
+    }
     
     .nav-logo1{
-        display: none;
+        height: 50px;
     }
 
     .navegation {
