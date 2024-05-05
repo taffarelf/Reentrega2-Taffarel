@@ -1,10 +1,9 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 /* Las tipografias se instalan al comienzo del proyecto */
-
 /* Tipografia Local */
 @font-face {
     font-family: Montserrat;
@@ -15,7 +14,7 @@
 /* font-family: "Poppins", sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Selector de tipo etiqueta */
+/* Inicio */
 h1 {
     color: black;
     background-color: #7A8450;
@@ -25,7 +24,7 @@ h1 {
     justify-content: center;
 }
 
-div .texto-logo{
+div .texto-logo {
     color: black;
     background-color: #7A8450;
     font-family: Montserrat;
@@ -43,12 +42,10 @@ h2 {
     justify-content: left;
 }
 
-h3{
+h3 {
     font-size: medium;
 }
 
-
-/* Selector de tipo clase */
 .verde {
     background-color: #7A8450;
     color: black;
@@ -58,7 +55,6 @@ h3{
     border-radius: 5px;
 }
 
-/* Selector de tipo IDs */
 #hatha-yoga {
     font-size: 20px;
 }
@@ -72,6 +68,11 @@ h3{
 .navegacion a {
     color: white;
     text-decoration: none;
+    font-size: smaller;
+}
+
+.navegacion a:hover {
+    color: azure;
 }
 
 .navegacion ul {
@@ -79,23 +80,41 @@ h3{
     text-align: center;
 }
 
-.navegacion li{
+.navegacion li {
     display: inline-block;
     padding: 20px;
     font-family: Montserrat;
+    font-size: smaller;
 }
 
-.navegacion li a{
+.navegacion li a {
     color: black;
     font-weight: bold;
 }
 
-/* Imagen de fondo del texto */
-.fondo {
-    /* background-image: url("https://tldv.io/wp-content/uploads/2022/07/artur-luczka-loAfOVk1eNc-unsplash-scaled.jpg"); */
-    background-size: contain;
-    background-position: center;
-    background-repeat:repeat;
+/* Nosotros */
+.container p{
+    font-family: Montserrat;
+    color: black;
+}
+
+/* Preguntas Frecuentes */
+.faqs p {
+    font-family: Montserrat;
+    color: black;
+    font-size: large;
+    margin-top: 15px;
+    background-color: #7A8450;
+    width: 250px;
+    border-radius: 4px;
+}
+
+.titulo-faqs{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: larger;
 }
 
 /* Box Model */
@@ -106,19 +125,20 @@ h2 {
     overflow: auto;
 }
 
-.formulario input{
+.formulario input {
     display: block;
 }
 
 /* Main-Index */
-.yoga{
+.yoga {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    background-color: #7A8450;
 }
 
-.yoga img{
+.yoga img {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -130,22 +150,28 @@ h2 {
     margin: 20px;
 }
 
-.yoguita{
+.yoguita {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Montserrat;
+    color: black;
 }
 
-.yoguita button{
+.yoguita button {
+    margin-bottom: 10px;
     padding: 5px 10px;
     border-radius: 5px;
     background-color: #4e6724;
-    color: white;
+    color: black;
     font-family: Montserrat;
 }
 
-.elementos{
+.yoguita button:hover{
+    color: azure;
+}
+
+.elementos {
     display: grid;
     grid-template-columns: repeat(3, 200px);
     /* grid-template-rows: repeat(2, 150px);  */
@@ -161,258 +187,326 @@ h2 {
     padding: 25px;
 }
 
-.elementos div{
-    /* border: #4e6724 solid 2px; */
+.elementos div {
     margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.elementos div p{
+.elementos div p {
     font-family: Montserrat;
     font-size: 15px;
 }
 
-.elementos div img{
+.elementos div img {
     height: 150px;
 }
 
-.ver-mas{
+.ver-mas {
     background-color: #4e6724;
-    color: #ffffff;
+    color: black;
     font-family: Montserrat;
     font-size: 10px;
     padding: 5px 10px;
-    border-radius: 12px;
+    border-radius: 5px;
+}
+
+.ver-mas:hover{
+    color: azure;
 }
 
 /* Grid Galeria */
-.grid-galeria{
+.grid-galeria {
     display: grid;
-    grid-template-areas: 
-    "img1 img1 img2 img2"
-    "img3 img4 img4 img5"
-    "img3 img6 img6 img5"
+    grid-template-areas:
+        "img1 img1 img2 img2"
+        "img3 img4 img4 img5"
+        "img3 img6 img6 img5"
     ;
     grid-template-rows: repeat(3, 200px);
     grid-template-columns: repeat(4, 200px);
 }
 
-.grid-galeria div{
+.grid-galeria div {
     overflow: hidden;
 }
 
-.img-1{
+.img-1 {
     grid-area: img1;
     /* background-color: #008000; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.img-1 img{
+
+.img-1 img {
     width: 200%;
 }
 
-.img-2{
+.img-2 {
     grid-area: img2;
     /* background-color: #008000; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.img-2 img{
+
+.img-2 img {
     width: 100%;
 }
 
-.img-3{
+.img-3 {
     grid-area: img3;
     /* background-color: #008000; */
     display: flex;
     justify-content: center;
 }
-.img-3 img{
+
+.img-3 img {
     width: 100%;
 }
 
-.img-4{
+.img-4 {
     grid-area: img4;
     /* background-color: #008000; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.img-4 img{
+
+.img-4 img {
     width: 100%;
 }
 
-.img-5{
+.img-5 {
     grid-area: img5;
     /* background-color: #008000; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.img-5 img{
+
+.img-5 img {
     width: 100%;
 }
 
-.img-6{
+.img-6 {
     grid-area: img6;
     /* background-color: #008000; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.img-6 img{
+
+.img-6 img {
     width: 100%;
 }
 
-.grid-galeria img{
+.grid-galeria img {
     width: 450px;
 }
 
 /* Boton Fijo */
-.wap{
+i {
     position: fixed;
     top: 90%;
     right: 20px;
-}
-.wap button{
     background-color: #4e6724;
-    color:#ffffff ;
+    color: #ffffff;
     font-family: Montserrat;
     padding: 15px;
     border-radius: 15px;
 }
 
+/* Pie de Página */
+footer{
+    width: 100%;
+    bottom: 0;
+    margin-top: 5px;
+    padding: 2rem 8%;
+    background-color: #7A8450;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h4 {
+    font-family: Montserrat;
+    font-size: smaller;
+    text-align: center;
+    color: black;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+h5 {
+    font-family: Montserrat;
+    font-size: smaller;
+    color: black;
+    text-align: center;
+}
+
+.a-footer {
+    background-color: #7A8450;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-family: Montserrat;
+    font-size: smaller;
+    color: black;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+    margin: 20px;
+    font-size: small;
+    text-align: center;
+}
+
+/* Contacto */
+.contacto{
+    height: 200px;
+    align-items: center;
+}
+
 /* Boostrap */
-.carousel-item.active{
+.carousel-item.active {
     display: flex;
     width: 100%;
     transition: transform 1s ease-in-out;
     justify-content: center;
 }
 
-.boton{
+.boton {
     display: none;
 }
 
-.nav-logo{
-    width: 80px;
+.nav-logo {
+    width: 70px;
 }
 
-.navbar{
+.navbar {
     display: none;
 }
 
-.collapse{
-    display: none;
-}
-
-/* Menu Hamburguesa
-.col-md-12 ul{
-    
-} */
-
-
-
-/* ------- RESPONSIVE -------- */
-/* ESTRATEGIA: MOBILE LAST -> max-width -> de mayor a menor*/
-/* Tablet */
-/* @media (max-width:768px) {
-    h1{
-        background-color: #7A8450;
-        color: black;
-        margin: 15px;
-    }
-    .navegacion{
-        background-color: #7A8450;
-        height: 60px;
-    }
-    .navegacion a{
-        color: black;
-    }
-    .navegacion ul{
-        font-size: small;
-    }
-} */
 
 /* Mobile */
-/* @media (max-width: 376px){
-    h1{
+@media (max-width: 576px){
+    h1 {
         background-color: #7A8450;
         color: black;
         margin: 5px;
     }
-    h2{
+
+    h2 {
         color: black;
         font-family: Montserrat;
     }
-    .navegacion{
+
+    .navegacion {
         background-color: #7A8450;
-        height: 70px;
+        height: 120px;
+        margin-top: -50px;
     }
-    .navegacion a{
+
+    .navegacion a {
         color: black;
     }
-    .navegacion ul{
+
+    .navegacion ul {
         font-size: small;
     }
-    .navegacion li{
+
+    .navegacion li {
         display: none;
     }
-    .elementos{
+
+    .elementos {
         grid-template-columns: 1fr;
     }
-    .boton{
+
+    .boton {
         display: block;
         background-color: #7A8450;
         position: absolute;
         right: 0;
     }
-    .nav-logo{
-        display: flex;
-        width: 50px;
-        padding-top: 10px;
-        margin-left: 150px;
-    }
-    .navbar{
+    
+    .navbar {
         display: block;
         position: absolute;
         top: 0;
         right: 0;
     }
-    .bg-dark{
-        background-color: #7A8450 !important;
+    
+    .nav-logo1{
+        display: none;
     }
-    .collapse{
-        background-color: #7A8450;
+
+    .navegation {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "nav-logo . . navbar-toggler";
     }
-    .collapse ul{
-        list-style-type: none;
+
+    .navbar-toggler {
+        grid-area: navbar-toggler;
     }
-    .collapse li a{
-        text-decoration: none;
-        list-style-type: none;
-        color: black;
+
+    .bg-dark {
+    background-color: #7A8450 !important;
     }
-    .collapsing{
-        background-color: #7A8450;
+
+    .collapse {
+    background-color: #7A8450;
     }
-    .collapsing ul{
-        list-style-type: none;
+
+    .collapse ul {
+    list-style-type: none;
     }
-    .collapsing li a{
-        text-decoration: none;
-        color: black;
+
+    .collapse li a {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    font-family: Montserrat;
+    font-size: small;
+    display: flex;
+    justify-content: center;
     }
-    .navbar-toggler{
-        margin-top: 22px;
+    
+    .collapsing {
+    background-color: #7A8450;
     }
-    .carousel-item{
-        align-items: center;
-        width: 100%;
-        height: 100%;
+
+    .collapsing ul {
+    list-style-type: none;
     }
-} */
+
+    .collapsing li a {
+    text-decoration: none;
+    color: black;
+    font-family: Montserrat;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    }
+
+    .navbar-toggler {
+    margin-top: 22px;
+    }
+    
+    .carousel-item {
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    }
+}
